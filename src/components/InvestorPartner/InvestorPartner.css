@@ -1,0 +1,129 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.investorPartner {
+  background-image: url("./images/background_img.png");
+  background-size: cover;
+}
+
+.wrapper {
+  width: 90%;
+  margin: 19px auto;
+}
+
+.investor-heading,
+.partner-heading {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.partner-heading {
+  margin-top: 43px;
+}
+
+.investor-heading h1,
+.partner-heading h1 {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 60px;
+  color: #060606;
+}
+
+.investor-heading p,
+.partner-heading p {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 36px;
+
+  letter-spacing: -0.02em;
+  color: #262626;
+}
+
+.logo-wrapper {
+  display: flex;
+  justify-content: center;
+  column-gap: 40px;
+}
+
+.investor-logo {
+  width: 208.07px;
+}
+.investor-logo img {
+  width: 100%;
+}
+
+.partner-logo {
+  width: 190.96px;
+}
+
+.partner-logo img {
+  width: 100%;
+}
+
+@media (max-width: 860px) {
+  .partner-heading {
+    margin-top: 32px;
+  }
+
+  .investor-heading,
+  .partner-heading {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .investor-heading h1,
+  .partner-heading h1 {
+    font-size: 32px;
+    line-height: 52px;
+  }
+  .investor-heading p,
+  .partner-heading p {
+    font-size: 22px;
+    line-height: 32px;
+  }
+
+  .investor-logo {
+    width: 177.17px;
+  }
+
+  .partner-logo {
+    width: 186.85px;
+  }
+}
+@media (max-width: 480px) {
+  .investor-heading {
+    margin-bottom: 22px;
+  }
+  .partner-heading {
+    margin-top: 48px;
+    margin-bottom: 19px;
+  }
+
+  .investor-heading h1,
+  .partner-heading h1 {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 30px;
+    margin-bottom: 10px;
+  }
+
+  .investor-heading p,
+  .partner-heading p {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .logo-wrapper {
+    flex-direction: column;
+    align-items: center;
+    row-gap: 22px;
+  }
+}

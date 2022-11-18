@@ -1,0 +1,219 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+.life-at-DGV {
+  text-align: center;
+}
+
+.wrapper {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.life-at-DGV h1 {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 60px;
+  color: #060606;
+  position: relative;
+  z-index: 2;
+}
+
+.slick-image img {
+  width: 100%;
+}
+
+.slick-image {
+  width: 350px;
+}
+
+/* -----------SLICK SLIDER--------------- */
+
+.slick-slide {
+  margin-right: 30px;
+}
+
+.slick-slider .slick-prev,
+.slick-slider .slick-next {
+  top: 40%;
+  z-index: 99;
+}
+
+.slick-slider .slick-prev::before,
+.slick-slider .slick-next::before {
+  color: transparent;
+  font-size: 40px;
+  opacity: 1;
+  padding: 10px;
+}
+
+.slick-slider .slick-prev {
+  left: 20px;
+}
+
+.slick-slider .slick-next {
+  right: 35px;
+}
+
+.slick-slider .slick-prev::before {
+  background-image: url("../lifeAtDGV/images/left-arrow.png");
+  background-size: cover;
+}
+.slick-slider .slick-next::before {
+  background-image: url("../lifeAtDGV/images/right-arrow.png");
+  background-size: cover;
+}
+
+.slick-slider {
+  width: auto;
+  padding-left: 20px;
+}
+
+.slick-slider .slick-dots {
+  width: 100%;
+  position: relative;
+  z-index: 2;
+}
+.slick-slider .slick-dots li button::before {
+  margin-top: -20px;
+  font-size: 10px;
+}
+
+.slick-slider-img {
+  position: relative;
+}
+
+.slick-slider-img::before,
+.slick-slider-img::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  width: auto;
+  height: 400px;
+  background-color: white;
+  z-index: 1;
+  border-radius: 50%;
+}
+.slick-slider-img::before {
+  top: -108%;
+}
+.slick-slider-img::after {
+  bottom: -100%;
+}
+
+/* --------------------------------------- */
+
+@media (max-width: 1024px) {
+  .slick-slider .slick-prev {
+    left: -35px;
+  }
+
+  .slick-slider .slick-prev::before,
+  .slick-slider .slick-next::before {
+    font-size: 30px;
+  }
+  .life-at-DGV h1 {
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 30px;
+  }
+  .slick-image {
+    width: 250px !important;
+  }
+  .slick-slide {
+    margin-right: 20px;
+  }
+  .slick-slider {
+    padding: 0;
+  }
+
+  .slick-slider .slick-prev {
+    left: 0px;
+  }
+  .slick-slider .slick-next {
+    right: 30px;
+  }
+
+  /* -------------- */
+  .slick-slider-img::before,
+  .slick-slider-img::after {
+    height: 200px;
+  }
+
+  .slick-slider-img::before {
+    top: -72%;
+  }
+  .slick-slider-img::after {
+    bottom: -60%;
+  }
+  /* -------------- */
+}
+@media (max-width: 860px) {
+  .life-at-DGV h1 {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 30px;
+  }
+  .slick-image {
+    width: 220px !important;
+  }
+
+  /* -------------- */
+  .slick-slider-img::before,
+  .slick-slider-img::after {
+    height: 120px;
+  }
+  .slick-slider-img::before {
+    top: -49%;
+  }
+  .slick-slider-img::after {
+    bottom: -35%;
+  }
+
+  .slick-slider .slick-next {
+    right: 25px;
+  }
+  /* -------------- */
+}
+
+@media (max-width: 520px) {
+  .life-at-DGV h1 {
+    margin-bottom: 6px;
+  }
+  .slick-image {
+    width: 157.79px !important;
+  }
+
+  .slick-slide {
+    margin-right: 14px;
+  }
+
+  .slick-slider .slick-prev::before,
+  .slick-slider .slick-next::before {
+    font-size: 20px;
+  }
+
+  .slick-slider .slick-next {
+    right: 20px;
+  }
+
+  /* -------------- */
+  .slick-slider-img::before,
+  .slick-slider-img::after {
+    height: 88px;
+  }
+
+  .slick-slider-img::before {
+    top: -48%;
+  }
+  .slick-slider-img::after {
+    bottom: -23%;
+  }
+  /* -------------- */
+}
