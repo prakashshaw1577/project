@@ -61,6 +61,7 @@ const LifeAtDGV = () => {
               </div>
             </Slider>
           </div>
+          <a href="#a">More</a>
         </div>
       </div>
     </div>

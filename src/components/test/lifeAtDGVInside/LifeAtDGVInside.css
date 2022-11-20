@@ -1,0 +1,248 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.wrapper {
+  width: 90%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.life-at-DGV-section {
+  left: 0;
+  right: 0;
+}
+
+.heading {
+  color: #060606;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 60px;
+  margin-bottom: 7px;
+}
+
+.celebration-section {
+  text-align: center;
+  padding-bottom: 40px;
+  /* padding: 30px 0; */
+}
+
+.celebration-section:nth-child(even) {
+  background-color: #e6edf4;
+}
+
+.celebration-section h2 {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 45px;
+  padding-top: 20px;
+  margin-bottom: 31px;
+}
+
+.slick-image img {
+  width: 100%;
+}
+
+.slick-image {
+  width: 279.07px !important;
+}
+
+/* --------------Slick Slider-------------- */
+
+.slick-slider {
+  position: relative;
+  z-index: 1;
+}
+
+.slick-slider,
+.slick-initialized {
+  position: relative;
+}
+.slick-slide {
+  margin: 0 15px;
+  cursor: pointer;
+}
+.slick-slider .slick-prev,
+.slick-slider .slick-next {
+  position: absolute;
+  z-index: 2;
+}
+
+.slick-slider .slick-prev {
+  left: -10px;
+}
+.slick-slider .slick-next {
+  right: 35px;
+}
+
+.slick-slider .slick-prev::before {
+  background-image: url("../lifeAtDGV/images/left-arrow.png");
+  background-size: cover;
+}
+.slick-slider .slick-next::before {
+  background-image: url("../lifeAtDGV/images/right-arrow.png");
+  background-size: cover;
+}
+.slick-slider .slick-prev::before,
+.slick-slider .slick-next::before {
+  /* color: #094e8f; */
+  color: transparent;
+  padding: 12px;
+  opacity: 1;
+  font-size: 42px;
+}
+
+.celebration-close {
+  display: none;
+}
+
+/* ----------POPUP-------- */
+
+.cancel-button {
+  width: fit-content;
+  font-size: 25px;
+  cursor: pointer;
+  color: white;
+  cursor: pointer;
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  z-index: 999;
+}
+
+.celebration-img-popup {
+  position: fixed;
+  left: 0;
+  right: 0;
+  background-color: #060606b4;
+  height: 100vh;
+  z-index: 99;
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+}
+
+.slick-image-popup img {
+  width: 100%;
+}
+.slick-image-popup {
+  width: 700px !important;
+  /* height: 500px; */
+}
+
+.celebration-img-popup .slick-slider {
+  width: 700px;
+}
+
+/* ------------------------ */
+
+@media (max-width: 1024px) {
+  /* popup */
+  .slick-image-popup {
+    width: 500px !important;
+  }
+
+  .celebration-img-popup .slick-slider {
+    width: 500px;
+  }
+
+  /* ---------- */
+}
+
+@media (max-width: 860px) {
+  .heading {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 30px;
+
+    margin-bottom: 10px;
+  }
+  .celebration-section {
+    padding-bottom: 16.22px;
+  }
+
+  .celebration-section h2 {
+    font-size: 18px;
+    line-height: 24px;
+    padding: 0;
+    margin-top: 7px;
+    margin-bottom: 10px;
+  }
+
+  .slick-slide {
+    margin: 0 5px;
+  }
+
+  .slick-image {
+    width: 200px !important;
+  }
+
+  .slick-slider .slick-next::before,
+  .slick-slider .slick-prev::before {
+    font-size: 30px;
+  }
+
+  .slick-slider .slick-prev {
+    left: -2px;
+  }
+  .slick-slider .slick-next {
+    right: 30px;
+  }
+  /* popup */
+  .slick-image-popup {
+    width: 400px !important;
+  }
+
+  .celebration-img-popup .slick-slider {
+    width: 400px;
+  }
+  /* ------- */
+}
+
+@media (max-width: 520px) {
+  .heading {
+    font-size: 20px;
+  }
+
+  .celebration-section h2 {
+    font-size: 16px;
+  }
+
+  .slick-slide {
+    margin: 0 5px;
+  }
+
+  .slick-image {
+    width: 117.56px !important;
+  }
+
+  .slick-slider .slick-next::before,
+  .slick-slider .slick-prev::before {
+    font-size: 20px;
+  }
+
+  .slick-slider .slick-prev {
+    left: -2px;
+  }
+  .slick-slider .slick-next {
+    right: 20px;
+  }
+
+  /* popup */
+  .slick-image-popup {
+    width: 328px !important;
+  }
+
+  .celebration-img-popup .slick-slider {
+    width: 328px;
+  }
+  /* ------- */
+}
