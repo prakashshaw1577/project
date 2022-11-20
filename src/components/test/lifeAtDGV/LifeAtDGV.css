@@ -91,6 +91,7 @@
 
 .slick-slider-img {
   position: relative;
+  /* z-index: -2; */
 }
 
 .slick-slider-img::before,
@@ -117,14 +118,14 @@
 /* --------------------------------------- */
 
 @media (max-width: 1024px) {
-  .slick-slider .slick-prev {
+  /* .slick-slider .slick-prev {
     left: -35px;
   }
 
   .slick-slider .slick-prev::before,
   .slick-slider .slick-next::before {
     font-size: 30px;
-  }
+  } */
   .life-at-DGV h1 {
     font-weight: 600;
     font-size: 30px;
@@ -140,12 +141,12 @@
     padding: 0;
   }
 
-  .slick-slider .slick-prev {
+  /* .slick-slider .slick-prev {
     left: 0px;
   }
   .slick-slider .slick-next {
     right: 30px;
-  }
+  } */
 
   /* -------------- */
   .slick-slider-img::before,
@@ -201,14 +202,14 @@
     margin-right: 14px;
   }
 
-  .slick-slider .slick-prev::before,
+  /* .slick-slider .slick-prev::before,
   .slick-slider .slick-next::before {
     font-size: 20px;
   }
 
   .slick-slider .slick-next {
     right: 20px;
-  }
+  } */
 
   /* -------------- */
   .slick-slider-img::before,
